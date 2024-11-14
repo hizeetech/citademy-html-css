@@ -1,0 +1,392 @@
+/* styles.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(222, 197, 209);
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    height: 500px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+
+.middle {
+    text-align: center;
+}
+
+.logo {
+    width: 750px;
+    mix-blend-mode: multiply;
+    align-items: center;
+}
+
+.cta-button {
+    background: rgb(18, 2, 2);
+    color: white;
+    padding: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to left, #2e3a47, #e9ecee, white);
+    padding: 15px 30px;
+    color: #fff;
+    margin-top: -150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    justify-items: right;
+
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+    position: right;
+    display: flex;
+}
+.navbar .nav-links a:hover {
+    color: #d4d4d4;
+}
+
+.intro {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+
+/* Container for the scrolling text */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto; /* or specify your desired width */
+    background: lightgrey;
+}
+/* Scrolling text style */
+.marquee-text {
+    display: inline-block;
+    padding-left: auto; /* Start off-screen */
+    animation: scroll-text 30s linear infinite;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-text {
+    from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+}
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+    align-items: center;
+}
+
+.file-picker {
+    background-color: rgb(255, 86, 8);
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.about-us {
+    padding: 3rem 0;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+.contain {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.legend {
+    text-align: center;
+    margin-top: 0;
+}
+.contains p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    font-weight: 10;
+    padding: 20px;
+}
+
+.about-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-para p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.about-h {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+.about-h h3 {
+    font-size: 1.5rem;
+    color: #1a2a6c;
+    margin-bottom: 0.5rem;
+}
+
+.login_access {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-bottom: 150px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 0 10px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_continent {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.input_wrapper input[type="username"],
+.input_wrapper input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input_wrappers {
+    width: 100;
+    padding: 10px;
+    margin-top: 71px;
+    margin-right: 15px;
+    right: -10px;
+    position: absolute;
+    display: flex;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-submit {
+    display: flex;
+    width: 80px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 0;
+    position: relative;
+    align-items: center;
+}
+
+.input-submit:hover {
+    background-color: #0056b3;
+}
+
+.notification-banner {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -30px;
+}
+
+.notification-banner span {
+    flex: 1;
+}
+
+.notification-banner .logo {
+    height: 20px; /* Adjust height as needed */
+    margin-left: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.cbn {
+    mix-blend-mode: multiply;
+}
+
+    .contact_us {
+        background-color: #222;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        height: 100vh;
+        margin: 0;
+
+    }
+    .form-container {
+        background-color: #222;
+        width: 350px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 5px;
+        color: #ccc;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #444;
+        background-color: #333;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .form-container textarea {
+        resize: vertical;
+        height: 80px;
+    }
+
+    .form-container .privacy {
+        font-size: 0.9em;
+        color: #888;
+        margin: 15px 0;
+    }
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #00aaff;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .form-container button:hover {
+        background-color: #0088cc;
+    }
+
+    .transfer_form {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20px;
+            
+        }
+        
+        .spanny {
+            display: flex;
+            font-display: auto;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            justify-content: center;
+
+        }
+
+        .signupform {
+            /*background: black;*/
+            color: white;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(5,37,38,1) 100%);
+        }
+
+        .bank h2 {
+            display: flex;
+            justify-content: center;
+            background: black;
+            color: white;
+            padding: auto;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: xx-light;
+            font-family: Georgia,
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #00aaff;
+            color: #fff;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #19bd5b;
+        }
+    

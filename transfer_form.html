@@ -1,0 +1,87 @@
+<!-- transfer_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Transfer Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="transfer_form">
+            <div class="form-container"><br>
+                <form action="/submit-transfer" method="POST">
+                    <h2 class="spanny">Transfer Details</h2><br>
+
+                    <label for="transfer-type">Transfer Type:</label>
+                    <select id="transfer-type" name="transfer-type" required>
+                        <option value="intra-bank">Intra Bank Transfer</option>
+                        <option value="inter-bank">Inter Bank Transfer</option>
+                    </select><br><br>
+
+                    <label for="account-number">Your Account Number:</label>
+                    <input type="text" id="sender-account" name="sender-account" maxlength="10" required placeholder="Enter up to 10 digits">
+                    <br><br>
+
+                    <label for="recipient-account">Recipient Account Number:</label>
+                    <input type="text" id="recipient-account" name="recipient-account" maxlength="10" required placeholder="Enter up to 10 digits">
+                    <br><br>
+
+                    <label for="recipient-bank">Recipient Bank:</label>
+                    <select id="recipient-bank" name="recipient-bank">
+                        <option value="">Recipient Account Number</option>
+                        <option value="gtco">GTCo</option>
+                        <option value="access_bank_plc">Access Bank Plc</option>
+                        <option value="fidelity_bank_plc">Fidelity Bank Plc</option>
+                        <option value="first_bank_of_nigeria_ltd">First Bank of Nigeria Ltd</option>
+                        <option value="first_city_monument_bank">First City Monument Bank (FCMB)</option>
+                        <option value="guaranty_trust_bank">Guaranty Trust Bank (GTBank)</option>
+                        <option value="united_bank_of_africa">United Bank for Africa (UBA)</option>
+                        <option value="zenith_bank_plc">Zenith Bank Plc</option>
+                        <option value="citibank_nigeria_ltd">Citibank Nigeria Ltd</option>
+                        <option value="ecobank_nigeria">Ecobank Nigeria</option>
+                        <option value="globus_bank_ltd">Globus Bank Ltd</option>
+                        <option value="heritage_bank">Heritage Bank</option>
+                        <option value="keystone_bank_ltd">Keystone Bank Ltd</option>
+                        <option value="polaris_bank">Polaris Bank</option>
+                        <option value="stanbic_ibtc_bank">Stanbic IBTC Bank</option>
+                        <option value="standard_chartered_bank_nigeria">Standard Chartered Bank Nigeria</option>
+                        <option value="sterling_bank">Sterling Bank</option>
+                        <option value="titan_trust_bank">Titan Trust Bank</option>
+                        <option value="union_bank_of_nigeria">Union Bank of Nigeria</option>
+                        <option value="unity_bank">Unity Bank</option>
+                        <option value="wema_bank_plc">Wema Bank Plc</option>
+                        <option value="parallex_bank_ltd">Parallex Bank Ltd</option>
+                        <option value="providus_bank_ltd">Providus Bank Ltd</option>
+                        <option value="signature_bank">Signature Bank</option>
+                        <option value="suntrust_bank">SunTrust Bank</option>
+                        <option value="jaiz_bank">Jaiz Bank</option>
+                        <option value="lotus_bank">Lotus Bank</option>
+                        <option value="taj_bank">Taj Bank</option>
+                        <option value="alternative_bank_ltd">Alternative Bank Ltd</option>
+                        <option value="coronation_merchant_bank">Coronation Merchant Bank</option>
+                        <option value="fbnquest_merchant_bank">FBNQuest Merchant Bank</option>
+                        <option value="fsdh_merchant_bank">FSDH Merchant Bank</option>
+                        <option value="greenwich_merchank_bank">Greenwich Merchant Bank</option>
+                        <option value="nova_merchank_bank">Nova Merchant Bank</option>
+                        <option value="rand_merchank_bank">Rand Merchant Bank</option>
+                    </select>
+                    <br><br>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                    <br><br>
+
+                    <label for="transfer-date">Transfer Date:</label>
+                    <input type="date" id="transfer-date" name="transfer-date" required>
+                    <br><br>
+
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+                    <br><br>
+
+                    <button type="submit">Submit Transfer</button>
+                </form>
+            </div>
+</body>
+</html>
